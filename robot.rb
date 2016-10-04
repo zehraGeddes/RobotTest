@@ -110,6 +110,8 @@ class Robot
   def isPlaced
     if (Array(0..4).include?($placeX) && Array(0..4).include?($placeY))
       return true
+    else
+      promptPlace
     end
   end
 
