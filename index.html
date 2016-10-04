@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Frank Body Happy Xmas</title>
+
+  <link href="assets/css/main.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--  Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/robot.js"></script>
+</head>
+  <body>
+    <p>Enter coordinates between 0 to 5.</p>
+    <form id="place-form">
+      X:<input type="text" name="placeX" />
+      Y:<input type="text" name="placeY" />
+      Direction:<select name="placeF">
+        <option value="north" selected="selected">North</option>
+        <option value="west">West</option>
+        <option value="south">South</option>
+        <option value="east">East</option>
+      </select>
+      <button>Place</button>
+    </form>
+
+    <button id="move" class="directionalButton" disabled >Move</button>
+    <button id="left" class="directionalButton" disabled >Left</button>
+    <button id="right" class="directionalButton" disabled >Right</button>
+    <button id="report" class="directionalButton" disabled >Report</button>
+    <div id="report-board"></div>
+  </body>
+</html>
